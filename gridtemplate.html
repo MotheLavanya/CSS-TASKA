@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosaic View</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: cornsilk;
+        }
+        body{
+            padding: 30px;
+        }
+        h1{
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 35px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .template{
+            display: grid;
+            gap: 10px;
+            width: 100%;
+            margin: auto;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+           'item1 item2 item3'
+           'item4 item4 item3'
+           'item4 item4 item3'
+           'item5 item6 item6' 
+           'item7 item7 item9'
+           'item10 item8 item9'
+           'item10 item8 item9'
+          'item10 item11 item12' 
+          'item13 item11 item14'
+          'item13 item11 item14' ;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+    .img1  { grid-area: item1; }
+    .img2  { grid-area: item2; }
+    .img3  { grid-area: item3; }
+    .img4  { grid-area: item4; }
+    .img5  { grid-area: item5; }
+    .img6  { grid-area: item6; }
+    .img7  { grid-area: item7; }
+    .img8  { grid-area: item8; }
+    .img9  { grid-area: item9; }
+    .img10 { grid-area: item10; }
+    .img11 { grid-area: item11; }
+    .img12 { grid-area: item12; }
+    .img13 { grid-area: item13; }
+    .img14 { grid-area: item14; }
+
+    @media (max-width: 768px) {
+        .template {
+            grid-template-columns: repeat(4,1fr);
+            grid-template-areas:
+            'item1 item2 item2 item3'
+            'item1 item4 item5 item3'
+            'item6 item4 item7 item8'
+            'item6 item9 item9 item8'
+            'item10 item11 item12 item8'
+            'item13 item11 item14 item14';
+        }
+
+        h1{
+            text-align: center;
+            /* font-size: 45px; */
+            margin-bottom: 35px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1>Mosaic View </h1>
+    <div class="template">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.m4FmOjk0Bx-N4JaBzsBoTgHaEP?pid=Api&P=0&h=180" alt="1" class="img1">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.BXsxvnDMc7nQyCkgX5DgLwHaEK?pid=Api&P=0&h=180" alt="2" class="img2">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.ysG512n_rhO2K_nZE99NbgHaEo?pid=Api&P=0&h=180" alt="3" class="img3">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.GvntOdvz80txbfbW4rz2kAHaEo?pid=Api&P=0&h=180" alt="4" class="img4">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.GpfWQnqdLuXiMbr2xfwpdQHaEK?pid=Api&P=0&h=180" alt="5" class="img5">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.DpcLyyRCeTWoiiMNdCTXxQHaEK?pid=Api&P=0&h=180" alt="6" class="img6">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.E4IJcali_762Oo_vNhhbFgHaEK?pid=Api&P=0&h=180" alt="7" class="img7">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.OU4_3cXgnG28Xu3o0zTFiAHaE8?pid=Api&P=0&h=180" alt="8" class="img8">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.XxvjAR-wbQKGMbQQRJoTOAHaEK?pid=Api&P=0&h=180" alt="9" class="img9">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.YvmhPAdlRcjRqYR8lJy-TAHaE8?pid=Api&P=0&h=180" alt="10" class="img10">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.uatVXm9t-Y94A_3i9-DMKQHaE7?pid=Api&P=0&h=180" alt="11" class="img11">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.UqFfl4pqbFiogJDIMKCwdQHaD9?pid=Api&P=0&h=180" alt="12" class="img12">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.S1dPiODc5rCcWObk4DThygHaEo?pid=Api&P=0&h=180" alt="13"class="img13">
+        <img src="https://tse3.mm.bing.net/th?id=OIF.%2f3sxvsyaEygJGtEnpQnQpg&pid=Api&P=0&h=180" alt="14" class="img14">
+
+    </div>
+</body>
+</html>
